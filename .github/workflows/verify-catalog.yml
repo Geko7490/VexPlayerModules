@@ -1,0 +1,18 @@
+name: Verify published CTC catalog
+on:
+  push:
+    branches: [main]
+    paths: ['ctc-models/catalog.json', 'ctc-models/tools/test_catalog.py', '.github/workflows/verify-catalog.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.11'
+      - run: python -m unittest discover -s ctc-models/tools -p 'test_*.py' -v
+      - run: python ctc-models/tools/check_catalog.py

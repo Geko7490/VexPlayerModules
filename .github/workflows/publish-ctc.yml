@@ -1,9 +1,6 @@
 name: Publish verified CTC packages
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths: ['ctc-models/tools/**', '.github/workflows/publish-ctc.yml']
 permissions:
   contents: write
 concurrency:
