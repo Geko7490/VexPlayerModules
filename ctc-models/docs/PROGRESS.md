@@ -29,3 +29,9 @@ full byte count, SHA, ZIP CRC, strict two-file layout and manifest identity. Pas
 Catalog CI for 0b44928: run 41897181117, successful. Android CI is prepared in the app
 with a real range-resume/corruption/ZIP safety/decoder/alignment/cache test. Not yet run.
 Tooling MIT license copied from VexPlayer; binary weights retain their separate Apache license.
+
+5 November handoff: application Model Manager 1.1.1/versionCode4 pushed as
+6ab4533b8c61fc4a1c93398822a86045087a47cb. Android build and real-model emulator
+tests started: https://github.com/Geko7490/VexPlayerV1.16/actions/runs/41916198594
+Results are pending. User requested that after starting the Android build we record
+the link and wait for their feedback; no automatic monitoring or further changes.
