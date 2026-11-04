@@ -24,3 +24,8 @@ Four catalog regression tests and a lightweight public-URL verification workflow
 Minimum app version corrected to versionCode 4 (VexPlayer 1.1.1): older versionCode 3
 manual importers reject modelId/modelVersion manifest fields. Package bytes/SHA remain
 immutable; public catalog metadata now accurately requires the model-manager release.
+Local verification additionally downloaded both actual public assets and checked
+full byte count, SHA, ZIP CRC, strict two-file layout and manifest identity. Passed.
+Catalog CI for 0b44928: run 41897181117, successful. Android CI is prepared in the app
+with a real range-resume/corruption/ZIP safety/decoder/alignment/cache test. Not yet run.
+Tooling MIT license copied from VexPlayer; binary weights retain their separate Apache license.
