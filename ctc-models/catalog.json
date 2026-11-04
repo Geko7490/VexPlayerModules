@@ -1,1 +1,35 @@
-{"schema":1,"models":[]}
+{
+  "schema": 1,
+  "models": [
+    {
+      "id": "vex-ctc-tr",
+      "name": "Turkish CTC",
+      "language": "tr",
+      "architecture": "wav2vec2-character-ctc",
+      "version": "1",
+      "sizeBytes": 90129006,
+      "downloadUrl": "https://github.com/Geko7490/VexPlayerModules/releases/download/ctc-v1/vex-ctc-tr-1.zip",
+      "sha256": "0de92cc21458cd49420eebfbc4f0e2e7883316d8a867c7c98db0d2d8796e4e27",
+      "minAppVersionCode": 3,
+      "runtime": "onnxruntime-android-1.23.2",
+      "license": "Apache-2.0",
+      "sourceUrl": "https://huggingface.co/ceyda/wav2vec2-base-760-turkish/tree/b16ea5119c4b46aa9e8f79ca57e3d6aa3a204d0a",
+      "validation": "onnx-cpu-real-speech; android-device-and-singing-pending"
+    },
+    {
+      "id": "vex-ctc-en",
+      "name": "English CTC",
+      "language": "en",
+      "architecture": "wav2vec2-character-ctc",
+      "version": "1",
+      "sizeBytes": 85992579,
+      "downloadUrl": "https://github.com/Geko7490/VexPlayerModules/releases/download/ctc-v1/vex-ctc-en-1.zip",
+      "sha256": "e40ec3eded02f6f6b71b5e0cfaac14c776b5013102290185757ff2a66b17e93a",
+      "minAppVersionCode": 3,
+      "runtime": "onnxruntime-android-1.23.2",
+      "license": "Apache-2.0",
+      "sourceUrl": "https://huggingface.co/facebook/wav2vec2-base-960h/tree/22aad52d435eb6dbaf354bdad9b0da84ce7d6156",
+      "validation": "onnx-cpu-real-speech; android-device-and-singing-pending"
+    }
+  ]
+}
