@@ -21,3 +21,6 @@ Application model manager/downloader and Android instrumentation are being integ
 on VexPlayer's feature/ai-karaoke-alignment branch. Android and physical-device singing
 QA remain pending; do not mark these packages Android-device verified yet.
 Four catalog regression tests and a lightweight public-URL verification workflow added.
+Minimum app version corrected to versionCode 4 (VexPlayer 1.1.1): older versionCode 3
+manual importers reject modelId/modelVersion manifest fields. Package bytes/SHA remain
+immutable; public catalog metadata now accurately requires the model-manager release.

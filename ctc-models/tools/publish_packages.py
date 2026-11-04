@@ -48,7 +48,7 @@ for model_id, name, language, source, revision in SOURCES:
     entries.append({'id': model_id, 'name': name, 'language': language, 'architecture': 'wav2vec2-character-ctc',
                     'version': '1', 'sizeBytes': package.stat().st_size,
                     'downloadUrl': f'https://github.com/Geko7490/VexPlayerModules/releases/download/ctc-v1/{package.name}',
-                    'sha256': hashlib.sha256(package.read_bytes()).hexdigest(), 'minAppVersionCode': 3,
+                    'sha256': hashlib.sha256(package.read_bytes()).hexdigest(), 'minAppVersionCode': 4,
                     'runtime': 'onnxruntime-android-1.23.2', 'license': 'Apache-2.0',
                     'sourceUrl': f'https://huggingface.co/{source}/tree/{revision}',
                     'validation': 'onnx-cpu-real-speech; android-device-and-singing-pending'})

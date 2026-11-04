@@ -27,7 +27,7 @@ class CatalogTest(unittest.TestCase):
             self.assertEqual(model['runtime'], 'onnxruntime-android-1.23.2')
             self.assertEqual(model['architecture'], 'wav2vec2-character-ctc')
             self.assertEqual(model['license'], 'Apache-2.0')
-            self.assertGreaterEqual(model['minAppVersionCode'], 3)
+            self.assertGreaterEqual(model['minAppVersionCode'], 4)
             self.assertIn('android-device-and-singing-pending', model['validation'])
 
     def test_no_model_binaries_are_committed(self):
