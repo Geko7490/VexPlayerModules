@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Vex character CTC manifest v1",
+  "type": "object",
+  "required": ["schema", "name", "language", "vocabulary", "blankId", "sampleRate", "strideSamples", "receptiveSamples", "modelId", "modelVersion"],
+  "properties": {
+    "schema": {"const": 1}, "name": {"type": "string", "minLength": 1},
+    "language": {"enum": ["en", "tr"]}, "modelId": {"enum": ["vex-ctc-tr", "vex-ctc-en"]},
+    "modelVersion": {"const": "1"}, "vocabulary": {"type": "object", "minProperties": 4, "maxProperties": 256, "additionalProperties": {"type": "integer", "minimum": 0, "maximum": 255}},
+    "blankId": {"type": "integer", "minimum": 0, "maximum": 255},
+    "sampleRate": {"const": 16000}, "strideSamples": {"const": 320}, "receptiveSamples": {"const": 400},
+    "inputName": {"const": "input_values"}, "outputName": {"const": "logits"},
+    "lowercase": {"type": "boolean"}, "wordDelimiter": {"const": "|"}, "normalize": {"const": true}
+  },
+  "additionalProperties": false
+}
